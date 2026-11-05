@@ -1,3 +1,12 @@
 .vercel
 .claude
 .DS_Store
+
+# Secrets / credentials — never commit these
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*credentials*.json
+*serviceAccount*.json
