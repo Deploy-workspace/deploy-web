@@ -122,10 +122,14 @@
         <img src="assets/deploy-logo.svg" alt="Deploy" class="nav-logo-img">
       </a>
       <div class="nav-links">
-        <a href="#plans">Plans</a>
-        <a href="#faq">FAQ</a>
+        <a href="#plans" data-es="Planes">Plans</a>
+        <a href="#faq" data-es="Preguntas">FAQ</a>
       </div>
-      <a href="#book" class="nav-cta">Book a call <span class="arrow">&rarr;</span></a>
+      <div class="lang-toggle">
+        <button class="lang-opt active" data-lang="en">EN</button>
+        <button class="lang-opt" data-lang="es">ES</button>
+      </div>
+      <a href="#book" class="nav-cta" data-es-html="Agenda una llamada <span class='arrow'>&rarr;</span>">Book a call <span class="arrow">&rarr;</span></a>
       <button class="mobile-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -134,9 +138,13 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu">
-    <a href="#plans">Plans</a>
-    <a href="#faq">FAQ</a>
-    <a href="#book" class="btn-primary">Book a call <span class="arrow">&rarr;</span></a>
+    <a href="#plans" data-es="Planes">Plans</a>
+    <a href="#faq" data-es="Preguntas">FAQ</a>
+    <div class="lang-toggle">
+      <button class="lang-opt active" data-lang="en">EN</button>
+      <button class="lang-opt" data-lang="es">ES</button>
+    </div>
+    <a href="#book" class="btn-primary" data-es-html="Agenda una llamada <span class='arrow'>&rarr;</span>">Book a call <span class="arrow">&rarr;</span></a>
   </div>
 
   <!-- ═══════════ HERO ═══════════ -->
@@ -147,13 +155,13 @@
     </div>
     <div class="container">
       <div class="hero-content">
-        <p class="hero-badge"><span class="hero-badge-dot" aria-hidden="true"></span>Now booking Q4 &middot; 3 spots left</p>
-        <h1 class="display">A website that makes you the obvious choice.</h1>
-        <p class="subhead">Your competitors aren't better at the work. They just look better online. We fix that in 7 days.</p>
+        <p class="hero-badge" data-es-html="<span class='hero-badge-dot' aria-hidden='true'></span>Reservando Q4 &middot; 3 lugares disponibles"><span class="hero-badge-dot" aria-hidden="true"></span>Now booking Q4 &middot; 3 spots left</p>
+        <h1 class="display" data-es="Un sitio web que te hace la opción obvia.">A website that makes you the obvious choice.</h1>
+        <p class="subhead" data-es="Tu competencia no es mejor en el trabajo. Solo se ven mejor en internet. Lo arreglamos en 7 días.">Your competitors aren't better at the work. They just look better online. We fix that in 7 days.</p>
         <div class="hero-buttons">
-          <a href="#book" class="btn-primary">Book a call <span class="arrow">&rarr;</span></a>
+          <a href="#book" class="btn-primary" data-es-html="Agenda una llamada <span class='arrow'>&rarr;</span>">Book a call <span class="arrow">&rarr;</span></a>
         </div>
-        <p class="guarantee">See it before you pay.</p>
+        <p class="guarantee" data-es="Vélo antes de pagar.">See it before you pay.</p>
       </div>
     </div>
   </section>
@@ -254,8 +262,8 @@
               <path d="M44 18c10 2 18 12 16 24s-10 18-22 18S18 52 20 38s14-22 24-20z" fill="url(#blob1-b)" filter="url(#blob1-blur)" opacity="0.7"/>
             </svg>
           </div>
-          <h3>Instant credibility.</h3>
-          <p>A premium site that makes you look like the most established business in your area.</p>
+          <h3 data-es="Credibilidad instantánea.">Instant credibility.</h3>
+          <p data-es="Un sitio premium que te hace ver como el negocio más establecido en tu área.">A premium site that makes you look like the most established business in your area.</p>
         </div>
 
         <div class="value-item">
@@ -278,8 +286,8 @@
               <path d="M48 22c10 4 16 16 12 28s-14 18-26 14S16 50 22 38s16-20 26-16z" fill="url(#blob2-b)" filter="url(#blob2-blur)" opacity="0.6"/>
             </svg>
           </div>
-          <h3>Win the comparison.</h3>
-          <p>When customers Google you and your competitor side by side, you look like the obvious choice.</p>
+          <h3 data-es="Gana la comparación.">Win the comparison.</h3>
+          <p data-es="Cuando los clientes te buscan en Google junto a tu competencia, tú pareces la opción obvia.">When customers Google you and your competitor side by side, you look like the obvious choice.</p>
         </div>
 
         <div class="value-item">
@@ -303,8 +311,8 @@
               <path d="M42 20c12 0 22 10 20 24s-12 20-24 18S18 50 22 38s8-18 20-18z" fill="url(#blob3-b)" filter="url(#blob3-blur)" opacity="0.65"/>
             </svg>
           </div>
-          <h3>Charge what you're worth.</h3>
-          <p>A professional presence lets you command higher prices because you look worth more.</p>
+          <h3 data-es="Cobra lo que vales.">Charge what you're worth.</h3>
+          <p data-es="Una presencia profesional te permite cobrar precios más altos porque te ves como una empresa de mayor valor.">A professional presence lets you command higher prices because you look worth more.</p>
         </div>
 
       </div>
@@ -314,8 +322,8 @@
   <!-- ═══════════ WHAT WE DO ═══════════ -->
   <section class="what-we-do">
     <div class="container">
-      <p class="label" data-reveal="up" style="text-align:center; margin-bottom:16px;">What we do</p>
-      <h2 class="scroll-text" data-scroll-reveal>We build websites that make local businesses look like the most established name in town. Because first impressions shouldn't be left to chance.</h2>
+      <p class="label" data-reveal="up" style="text-align:center; margin-bottom:16px;" data-es="Lo que hacemos">What we do</p>
+      <h2 class="scroll-text" data-scroll-reveal data-es="Construimos sitios web que hacen que los negocios locales se vean como el nombre más establecido del área. Porque las primeras impresiones no deberían dejarse al azar.">We build websites that make local businesses look like the most established name in town. Because first impressions shouldn't be left to chance.</h2>
     </div>
   </section>
 
@@ -323,8 +331,8 @@
   <section id="how-it-works">
     <div class="process-scroll">
       <div class="process-sticky">
-        <p class="label" data-reveal="up" style="text-align:center; margin-bottom:16px;">Process</p>
-        <h2 class="headline" data-text-reveal style="text-align:center">How it works</h2>
+        <p class="label" data-reveal="up" style="text-align:center; margin-bottom:16px;" data-es="Proceso">Process</p>
+        <h2 class="headline" data-text-reveal style="text-align:center" data-es="Cómo funciona">How it works</h2>
 
         <div class="process-arc-wrap">
           <svg class="process-arc" viewBox="0 0 600 160" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -341,20 +349,20 @@
 
         <div class="process-panels">
           <div class="process-panel active">
-            <h3 class="process-title">Call.</h3>
-            <p class="process-desc">15 minutes. We learn your business, your goals, and who you're trying to reach.</p>
+            <h3 class="process-title" data-es="Llamada.">Call.</h3>
+            <p class="process-desc" data-es="15 minutos. Conocemos tu negocio, tus metas y a quién intentas llegar.">15 minutes. We learn your business, your goals, and who you're trying to reach.</p>
           </div>
           <div class="process-panel">
-            <h3 class="process-title">Design.</h3>
-            <p class="process-desc">We design your homepage first, free. You only move forward if you love it.</p>
+            <h3 class="process-title" data-es="Diseño.">Design.</h3>
+            <p class="process-desc" data-es="Diseñamos tu página principal primero, gratis. Solo avanzas si te encanta.">We design your homepage first, free. You only move forward if you love it.</p>
           </div>
           <div class="process-panel">
-            <h3 class="process-title">Build.</h3>
-            <p class="process-desc">We write, build, test and set up SEO. You just approve.</p>
+            <h3 class="process-title" data-es="Construcción.">Build.</h3>
+            <p class="process-desc" data-es="Escribimos, construimos, probamos y configuramos SEO. Tú solo apruebas.">We write, build, test and set up SEO. You just approve.</p>
           </div>
           <div class="process-panel">
             <h3 class="process-title">Deploy.</h3>
-            <p class="process-desc">Your site launches in 7 days. We look after it every month.</p>
+            <p class="process-desc" data-es="Tu sitio se lanza en 7 días. Nosotros lo cuidamos cada mes.">Your site launches in 7 days. We look after it every month.</p>
           </div>
         </div>
       </div>
@@ -364,63 +372,63 @@
   <!-- ═══════════ TESTIMONIALS ═══════════ -->
   <section id="testimonials">
     <div class="container">
-      <p class="label" data-reveal="up" style="text-align:center; margin-bottom:16px;">Testimonials</p>
-      <h2 class="headline" data-text-reveal>What clients say</h2>
+      <p class="label" data-reveal="up" style="text-align:center; margin-bottom:16px;" data-es="Testimonios">Testimonials</p>
+      <h2 class="headline" data-text-reveal data-es="Lo que dicen nuestros clientes">What clients say</h2>
 
       <div class="testimonials-carousel" data-stagger="0.2">
         <div class="testimonials-track">
 
         <div class="testimonial-card">
-          <blockquote>"Deploy built our site in under two weeks. We started getting calls the same month."</blockquote>
+          <blockquote data-es="&ldquo;Deploy construyó nuestro sitio en menos de dos semanas. Empezamos a recibir llamadas el mismo mes.&rdquo;">"Deploy built our site in under two weeks. We started getting calls the same month."</blockquote>
           <div class="testimonial-author">
             <div class="testimonial-avatar">OL</div>
             <div class="testimonial-info">
               <div class="name">Oscar Lopez</div>
-              <div class="role">Landscaping Company Owner</div>
+              <div class="role" data-es="Dueño de empresa de jardinería">Landscaping Company Owner</div>
             </div>
           </div>
         </div>
 
         <div class="testimonial-card">
-          <blockquote>"I didn't have to write a single word. They handled everything and it looks incredible."</blockquote>
+          <blockquote data-es="&ldquo;No tuve que escribir ni una sola palabra. Ellos se encargaron de todo y se ve increíble.&rdquo;">"I didn't have to write a single word. They handled everything and it looks incredible."</blockquote>
           <div class="testimonial-author">
             <div class="testimonial-avatar">JL</div>
             <div class="testimonial-info">
               <div class="name">James Lattanza</div>
-              <div class="role">Roofing Company Owner</div>
+              <div class="role" data-es="Dueño de empresa de techos">Roofing Company Owner</div>
             </div>
           </div>
         </div>
 
         <div class="testimonial-card">
-          <blockquote>"Our old website looked like it was from 2010. Now customers tell us we look like a national brand."</blockquote>
+          <blockquote data-es="&ldquo;Nuestro sitio anterior parecía del 2010. Ahora los clientes nos dicen que parecemos una marca nacional.&rdquo;">"Our old website looked like it was from 2010. Now customers tell us we look like a national brand."</blockquote>
           <div class="testimonial-author">
             <div class="testimonial-avatar">MR</div>
             <div class="testimonial-info">
               <div class="name">Maria Reyes</div>
-              <div class="role">Cleaning Service Owner</div>
+              <div class="role" data-es="Dueña de servicio de limpieza">Cleaning Service Owner</div>
             </div>
           </div>
         </div>
 
         <div class="testimonial-card">
-          <blockquote>"The whole process was painless. They asked a few questions, and a week later we had a site that actually converts."</blockquote>
+          <blockquote data-es="&ldquo;Todo el proceso fue muy fácil. Hicieron unas preguntas y una semana después teníamos un sitio que realmente convierte.&rdquo;">"The whole process was painless. They asked a few questions, and a week later we had a site that actually converts."</blockquote>
           <div class="testimonial-author">
             <div class="testimonial-avatar">DW</div>
             <div class="testimonial-info">
               <div class="name">David Walsh</div>
-              <div class="role">HVAC Company Owner</div>
+              <div class="role" data-es="Dueño de empresa de HVAC">HVAC Company Owner</div>
             </div>
           </div>
         </div>
 
         <div class="testimonial-card">
-          <blockquote>"We went from zero online presence to ranking on the first page. Best investment we've made this year."</blockquote>
+          <blockquote data-es="&ldquo;Pasamos de cero presencia en línea a aparecer en la primera página. La mejor inversión que hemos hecho este año.&rdquo;">"We went from zero online presence to ranking on the first page. Best investment we've made this year."</blockquote>
           <div class="testimonial-author">
             <div class="testimonial-avatar">SK</div>
             <div class="testimonial-info">
               <div class="name">Sarah Kim</div>
-              <div class="role">Dental Practice Owner</div>
+              <div class="role" data-es="Dueña de consultorio dental">Dental Practice Owner</div>
             </div>
           </div>
         </div>
@@ -434,79 +442,79 @@
   <!-- ═══════════ PLANS ═══════════ -->
   <section id="plans">
     <div class="container">
-      <p class="label" data-reveal="up" style="text-align:center; margin-bottom:16px;">Plans</p>
-      <h2 class="headline" data-text-reveal>Your new professional presence</h2>
-      <p class="plans-intro" data-reveal="up" data-revealDelay="0.2">Two plans. Both launch within 7 days.</p>
+      <p class="label" data-reveal="up" style="text-align:center; margin-bottom:16px;" data-es="Planes">Plans</p>
+      <h2 class="headline" data-text-reveal data-es="Tu nueva presencia profesional">Your new professional presence</h2>
+      <p class="plans-intro" data-reveal="up" data-revealDelay="0.2" data-es="Dos planes. Ambos se lanzan en 7 días.">Two plans. Both launch within 7 days.</p>
 
       <div class="plans-grid" data-stagger="0.2">
 
         <!-- Get Found -->
         <div class="plan-card">
           <h3>Get Found</h3>
-          <p class="plan-desc">A polished, credible online presence. Everything you need to look established and win trust from day one.</p>
+          <p class="plan-desc" data-es="Una presencia en línea pulida y creíble. Todo lo que necesitas para verte establecido y ganar confianza desde el primer día.">A polished, credible online presence. Everything you need to look established and win trust from day one.</p>
           <ul class="plan-features">
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#133BC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Up to 10 pages
+              <span data-es="Hasta 10 páginas">Up to 10 pages</span>
             </li>
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#133BC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Hosting, backups, security updates
+              <span data-es="Hosting, respaldos, actualizaciones de seguridad">Hosting, backups, security updates</span>
             </li>
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#133BC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Contact form + social links
+              <span data-es="Formulario de contacto + redes sociales">Contact form + social links</span>
             </li>
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#133BC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Online booking (Calendly)
+              <span data-es="Reservas en línea (Calendly)">Online booking (Calendly)</span>
             </li>
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#133BC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Edits billed hourly
+              <span data-es="Ediciones cobradas por hora">Edits billed hourly</span>
             </li>
           </ul>
-          <a href="#book" class="btn-plan">Book a call</a>
+          <a href="#book" class="btn-plan" data-es="Agenda una llamada">Book a call</a>
         </div>
 
         <!-- Get Booked -->
         <div class="plan-card featured">
-          <span class="plan-badge">Most popular</span>
+          <span class="plan-badge" data-es="Más popular">Most popular</span>
           <h3>Get Booked</h3>
-          <p class="plan-desc">The full professional package. Credibility, plus the tools that turn visitors into booked jobs.</p>
+          <p class="plan-desc" data-es="El paquete profesional completo. Credibilidad, más las herramientas que convierten visitantes en trabajos reservados.">The full professional package. Credibility, plus the tools that turn visitors into booked jobs.</p>
           <ul class="plan-features">
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#9AACFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Up to 25 pages
+              <span data-es="Hasta 25 páginas">Up to 25 pages</span>
             </li>
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#9AACFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Everything in Get Found
+              <span data-es="Todo lo de Get Found">Everything in Get Found</span>
             </li>
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#9AACFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Online booking (Calendly)
+              <span data-es="Reservas en línea (Calendly)">Online booking (Calendly)</span>
             </li>
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#9AACFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              2 professional emails
+              <span data-es="2 correos profesionales">2 professional emails</span>
             </li>
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#9AACFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              2 hrs of edits a month
+              <span data-es="2 hrs de ediciones al mes">2 hrs of edits a month</span>
             </li>
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#9AACFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Priority email support
+              <span data-es="Soporte por correo prioritario">Priority email support</span>
             </li>
           </ul>
-          <a href="#book" class="btn-plan">Book a call</a>
+          <a href="#book" class="btn-plan" data-es="Agenda una llamada">Book a call</a>
         </div>
 
       </div>
 
       <div class="plans-footer" data-reveal="up" data-revealDelay="0.3">
-        <p><span class="blue">See it before you pay.</span> We design your homepage first, free. If you don't love it, you owe nothing.</p>
+        <p data-es-html="<span class='blue'>Vélo antes de pagar.</span> Diseñamos tu página principal primero, gratis. Si no te encanta, no debes nada."><span class="blue">See it before you pay.</span> We design your homepage first, free. If you don't love it, you owe nothing.</p>
       </div>
     </div>
   </section>
@@ -514,68 +522,68 @@
   <!-- ═══════════ FAQ ═══════════ -->
   <section id="faq">
     <div class="container">
-      <p class="label" data-reveal="up" style="margin-bottom:16px;">FAQ</p>
-      <h2 class="headline" data-text-reveal>Questions</h2>
+      <p class="label" data-reveal="up" data-es="Preguntas" style="margin-bottom:16px;">FAQ</p>
+      <h2 class="headline" data-text-reveal data-es="Preguntas frecuentes">Questions</h2>
 
       <div class="faq-list" data-stagger="0.1">
 
         <div class="faq-item">
           <button class="faq-question">
-            How long does it take?
+            <span data-es="¿Cuánto tiempo toma?">How long does it take?</span>
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </button>
           <div class="faq-answer">
-            <div class="faq-answer-inner">About 7 days once we have everything we need from you.</div>
+            <div class="faq-answer-inner" data-es="Aproximadamente 7 días una vez que tengamos todo lo que necesitamos de tu parte.">About 7 days once we have everything we need from you.</div>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question">
-            What does it cost?
+            <span data-es="¿Cuánto cuesta?">What does it cost?</span>
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </button>
           <div class="faq-answer">
-            <div class="faq-answer-inner">Every plan is quoted on the call, so you only pay for what you need.</div>
+            <div class="faq-answer-inner" data-es="Cada plan se cotiza en la llamada, así solo pagas por lo que necesitas.">Every plan is quoted on the call, so you only pay for what you need.</div>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question">
-            What if I don't like the design?
+            <span data-es="¿Qué pasa si no me gusta el diseño?">What if I don't like the design?</span>
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </button>
           <div class="faq-answer">
-            <div class="faq-answer-inner">Then you don't pay anything. See it before you pay.</div>
+            <div class="faq-answer-inner" data-es="Entonces no pagas nada. Vélo antes de pagar.">Then you don't pay anything. See it before you pay.</div>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question">
-            Do I need to write the content?
+            <span data-es="¿Necesito escribir el contenido?">Do I need to write the content?</span>
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </button>
           <div class="faq-answer">
-            <div class="faq-answer-inner">No. We write everything. You just approve.</div>
+            <div class="faq-answer-inner" data-es="No. Nosotros escribimos todo. Tú solo apruebas.">No. We write everything. You just approve.</div>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question">
-            Why only 4 clients a month?
+            <span data-es="¿Por qué solo 4 clientes al mes?">Why only 4 clients a month?</span>
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </button>
           <div class="faq-answer">
-            <div class="faq-answer-inner">We're a small, dedicated team. Limiting new projects is how we launch every site in 7 days without cutting corners.</div>
+            <div class="faq-answer-inner" data-es="Somos un equipo pequeño y dedicado. Limitar proyectos nuevos es como lanzamos cada sitio en 7 días sin sacrificar calidad.">We're a small, dedicated team. Limiting new projects is how we launch every site in 7 days without cutting corners.</div>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question">
-            Can I make changes later?
+            <span data-es="¿Puedo hacer cambios después?">Can I make changes later?</span>
             <svg class="faq-icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </button>
           <div class="faq-answer">
-            <div class="faq-answer-inner">Yes. Ongoing updates are included with select plans. We'll walk you through the options on the call.</div>
+            <div class="faq-answer-inner" data-es="Sí. Las actualizaciones continuas están incluidas en planes selectos. Te explicamos las opciones en la llamada.">Yes. Ongoing updates are included with select plans. We'll walk you through the options on the call.</div>
           </div>
         </div>
 
@@ -588,10 +596,10 @@
     <div class="container">
       <div class="cta-card">
         <div class="cta-content">
-          <div class="spots" data-reveal="up"><span class="hero-badge-dot" aria-hidden="true"></span>Now booking Q4 &middot; 3 spots left</div>
-          <h2 class="display" data-text-reveal>Ready to look the part?</h2>
-          <p class="subhead" data-reveal="up" data-revealDelay="0.2">Book a 15-minute call. We'll design your homepage on us. If you don't love it, you owe nothing.</p>
-          <a href="#book" class="btn-cta" data-reveal="up" data-revealDelay="0.4">Book a call <span class="arrow">&rarr;</span></a>
+          <div class="spots" data-reveal="up" data-es-html="<span class='hero-badge-dot' aria-hidden='true'></span>Reservando Q4 &middot; 3 lugares disponibles"><span class="hero-badge-dot" aria-hidden="true"></span>Now booking Q4 &middot; 3 spots left</div>
+          <h2 class="display" data-text-reveal data-es="¿Listo para verte profesional?">Ready to look the part?</h2>
+          <p class="subhead" data-reveal="up" data-revealDelay="0.2" data-es="Reserva una llamada de 15 minutos. Diseñamos tu página principal sin costo. Si no te encanta, no debes nada.">Book a 15-minute call. We'll design your homepage on us. If you don't love it, you owe nothing.</p>
+          <a href="#book" class="btn-cta" data-reveal="up" data-revealDelay="0.4" data-es-html="Agenda una llamada <span class='arrow'>&rarr;</span>">Book a call <span class="arrow">&rarr;</span></a>
         </div>
         <div class="cta-visual" aria-hidden="true">
           <div class="cta-orb cta-orb-1"></div>
@@ -611,16 +619,16 @@
           <div class="logo-text">
             <img src="assets/deploy-logo.svg" alt="Deploy" class="footer-logo-img">
           </div>
-          <span class="footer-tagline">The presence your business deserves.</span>
+          <span class="footer-tagline" data-es="La presencia que tu negocio merece.">The presence your business deserves.</span>
         </div>
         <div class="footer-links">
-          <a href="#plans">Plans</a>
-          <a href="#faq">FAQ</a>
-          <a href="#book">Book a call</a>
+          <a href="#plans" data-es="Planes">Plans</a>
+          <a href="#faq" data-es="Preguntas">FAQ</a>
+          <a href="#book" data-es="Agenda una llamada">Book a call</a>
         </div>
         <div class="footer-links">
-          <a href="/terms">Terms</a>
-          <a href="/privacy">Privacy</a>
+          <a href="/terms" data-es="Términos">Terms</a>
+          <a href="/privacy" data-es="Privacidad">Privacy</a>
         </div>
         <div class="footer-email">
           <a href="mailto:info@deploymade.com">info@deploymade.com</a>
@@ -630,6 +638,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/lang.js"></script>
   <script>
     document.addEventListener('click', function(e) {
       var link = e.target.closest('a[href="#book"]');

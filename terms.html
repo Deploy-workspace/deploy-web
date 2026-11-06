@@ -11,6 +11,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
   <style>
     @font-face { font-family: 'Geist'; src: url('fonts/Geist-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
     @font-face { font-family: 'Geist'; src: url('fonts/Geist-Medium.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
@@ -30,6 +31,10 @@
       padding: 24px 0;
       text-align: center;
       border-bottom: 1px solid rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
     }
     .legal-nav a { text-decoration: none; color: #000; }
     .legal-nav img { height: 22px; }
@@ -123,18 +128,22 @@
 <body>
   <div class="legal-nav">
     <a href="/"><img src="assets/deploy-logo.svg" alt="Deploy"></a>
+    <div class="lang-toggle">
+      <button class="lang-opt active" data-lang="en">EN</button>
+      <button class="lang-opt" data-lang="es">ES</button>
+    </div>
   </div>
 
   <div class="legal-wrap">
-    <a href="/" class="back-link">&larr; Back to home</a>
+    <a href="/" class="back-link" data-es="&larr; Volver al inicio">&larr; Back to home</a>
 
     <div class="legal-label">Deploy &middot; deploymade.com</div>
-    <h1>Terms of Service</h1>
-    <p class="legal-date">Effective November 4, 2026.</p>
+    <h1 data-es="Términos de Servicio">Terms of Service</h1>
+    <p class="legal-date" data-es="Vigente desde el 4 de noviembre de 2026.">Effective November 4, 2026.</p>
 
-    <p>These terms apply to every Deploy plan. By completing checkout you agree to them.</p>
+    <p data-es="Estos términos aplican a todos los planes de Deploy. Al completar tu compra, aceptas estos términos.">These terms apply to every Deploy plan. By completing checkout you agree to them.</p>
 
-    <div class="summary-box">
+    <div class="summary-box" data-es-html="<strong>La versión corta</strong><ul><li>Todos los planes tienen un mínimo de 6 meses. Después de eso, tu plan es mes a mes y puedes cancelar en cualquier momento con un correo electrónico.</li><li>Nuestro equipo construye una vista previa de tu sitio antes de que pagues, para que puedas verlo primero. Si no te encanta, no debes nada.</li><li>Recibes 2 rondas de revisiones una vez que tu sitio completo está construido, antes de que se publique.</li><li>Tu dominio y tu contenido son tuyos desde el primer día. Una vez que completes tus 6 meses, todo el sitio es tuyo, ya sea que te quedes con nosotros o no.</li></ul>">
       <strong>The short version</strong>
       <ul>
         <li>Every plan has a 6 month minimum. After that you are month to month and can cancel any time with one email.</li>
@@ -144,95 +153,95 @@
       </ul>
     </div>
 
-    <h2>1. Who we are</h2>
-    <p>Deploy ("Deploy", "we", "us") designs, builds, hosts and maintains websites for local businesses on a monthly subscription. These terms are an agreement between Deploy and the business that signs up ("you").</p>
+    <h2 data-es="1. Quiénes somos">1. Who we are</h2>
+    <p data-es="Deploy (&quot;Deploy&quot;, &quot;nosotros&quot;) diseña, construye, aloja y mantiene sitios web para negocios locales con una suscripción mensual. Estos términos son un acuerdo entre Deploy y el negocio que se registra (&quot;tú&quot;).">Deploy ("Deploy", "we", "us") designs, builds, hosts and maintains websites for local businesses on a monthly subscription. These terms are an agreement between Deploy and the business that signs up ("you").</p>
 
-    <h2>2. Plans</h2>
-    <p>We offer two plans. Current pricing is shown on our pricing sheets and at checkout.</p>
+    <h2 data-es="2. Planes">2. Plans</h2>
+    <p data-es="Ofrecemos dos planes. Los precios actuales se muestran en nuestras hojas de precios y al momento de pagar.">We offer two plans. Current pricing is shown on our pricing sheets and at checkout.</p>
 
-    <h3>Get Found</h3>
-    <ul>
+    <h3 data-es="Get Found">Get Found</h3>
+    <ul data-es-html="<li>Una tarifa mensual más una tarifa única de lanzamiento. La tarifa de lanzamiento cubre el diseño y la construcción de tu sitio e incluye tu primer mes de servicio. La facturación mensual comienza después del primer mes.</li><li>Incluye hasta 10 páginas, diseño optimizado para móviles, alojamiento, respaldos, seguridad y actualizaciones, un formulario de contacto con botones de llamada y texto, una dirección de correo de reenvío gratuita en tu dominio, 2 rondas de revisiones antes del lanzamiento y soporte por correo electrónico.</li><li>Get Found no incluye cambios mensuales después del lanzamiento. Los cambios después del lanzamiento se cotizan primero y se facturan por hora.</li>">
       <li>A monthly fee plus a one time launch fee. The launch fee covers the design and build of your site and includes your first month of service. Monthly billing starts after the first month.</li>
       <li>Includes up to 10 pages, mobile optimized design, hosting, backups, security and updates, a contact form with call and text buttons, a free forwarding email address on your domain, 2 rounds of revisions before launch, and email support.</li>
       <li>Get Found does not include monthly changes after launch. Changes after launch are quoted first and billed by the hour.</li>
     </ul>
 
-    <h3>Get Booked</h3>
-    <ul>
+    <h3 data-es="Get Booked">Get Booked</h3>
+    <ul data-es-html="<li>Una tarifa mensual sin tarifa de lanzamiento. La facturación comienza el día que realizas tu compra.</li><li>Incluye todo lo de Get Found, más hasta 25 páginas, reservas en línea (conectamos tu calendario de reservas), pagos en tu sitio (conectamos tu enlace de pago), 1 bandeja de entrada profesional de Gmail en tu dominio, hasta 2 horas de cambios cada mes y soporte prioritario por correo electrónico.</li>">
       <li>A monthly fee with no launch fee. Billing starts the day you check out.</li>
       <li>Includes everything in Get Found, plus up to 25 pages, online booking (we connect your booking calendar), payments on your site (we connect your payment link), 1 professional Gmail inbox on your domain, up to 2 hours of changes every month, and priority email support.</li>
     </ul>
 
-    <h2>3. Add ons</h2>
+    <h2 data-es="3. Complementos">3. Add ons</h2>
     <table>
       <thead>
         <tr>
-          <th>Add on</th>
-          <th>Price</th>
-          <th>Notes</th>
+          <th data-es="Complemento">Add on</th>
+          <th data-es="Precio">Price</th>
+          <th data-es="Notas">Notes</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Professional Gmail inbox</td>
-          <td>$30 per month</td>
-          <td>Available on Get Found. One inbox is already included on Get Booked.</td>
+          <td data-es="Bandeja de entrada profesional de Gmail">Professional Gmail inbox</td>
+          <td data-es="$30 por mes">$30 per month</td>
+          <td data-es="Disponible en Get Found. Una bandeja ya está incluida en Get Booked.">Available on Get Found. One inbox is already included on Get Booked.</td>
         </tr>
         <tr>
-          <td>Extra email users</td>
-          <td>$15 per month each</td>
-          <td>For a partner or office manager on their own inbox. Available on either plan.</td>
+          <td data-es="Usuarios de correo adicionales">Extra email users</td>
+          <td data-es="$15 por mes cada uno">$15 per month each</td>
+          <td data-es="Para un socio o gerente de oficina con su propia bandeja de entrada. Disponible en cualquier plan.">For a partner or office manager on their own inbox. Available on either plan.</td>
         </tr>
         <tr>
-          <td>Domain</td>
-          <td>$60 per year</td>
-          <td>Only if you don't have a domain and want us to buy it for you. See section 8.</td>
+          <td data-es="Dominio">Domain</td>
+          <td data-es="$60 por año">$60 per year</td>
+          <td data-es="Solo si no tienes un dominio y quieres que lo compremos por ti. Ver sección 8.">Only if you don't have a domain and want us to buy it for you. See section 8.</td>
         </tr>
       </tbody>
     </table>
-    <p>Add ons are billed on the same card as your plan and can be cancelled at the end of any billing period.</p>
+    <p data-es="Los complementos se facturan con la misma tarjeta que tu plan y pueden cancelarse al final de cualquier período de facturación.">Add ons are billed on the same card as your plan and can be cancelled at the end of any billing period.</p>
 
-    <h2>4. Price changes</h2>
-    <p>Prices may change for new customers at any time. Your price will not change during your minimum term. After that we will give you at least 30 days notice by email before any change to your monthly fee.</p>
+    <h2 data-es="4. Cambios de precio">4. Price changes</h2>
+    <p data-es="Los precios pueden cambiar para nuevos clientes en cualquier momento. Tu precio no cambiará durante tu período mínimo. Después de eso, te daremos al menos 30 días de aviso por correo electrónico antes de cualquier cambio en tu tarifa mensual.">Prices may change for new customers at any time. Your price will not change during your minimum term. After that we will give you at least 30 days notice by email before any change to your monthly fee.</p>
 
-    <h2>5. Minimum term and cancellation</h2>
-    <p>Every plan has a minimum term of 6 consecutive monthly payments, counted from your first payment. After the minimum term your plan continues month to month.</p>
-    <p>To cancel after the minimum term, email <a href="mailto:info@deploymade.com">info@deploymade.com</a> before your next billing date. Your subscription ends at the end of the month you have already paid for. We do not refund partial months.</p>
-    <p>If you cancel before completing the minimum term, the remaining monthly payments in that term become due. Once they are paid, your subscription ends as described above and the ownership in section 9 applies.</p>
-    <p>Deploy may end your subscription at any time with 30 days notice, or immediately if payments fail and are not resolved, or if the site is used for anything unlawful. If we end it, you will not be charged for any period after the end date.</p>
+    <h2 data-es="5. Período mínimo y cancelación">5. Minimum term and cancellation</h2>
+    <p data-es="Todos los planes tienen un período mínimo de 6 pagos mensuales consecutivos, contados desde tu primer pago. Después del período mínimo, tu plan continúa mes a mes.">Every plan has a minimum term of 6 consecutive monthly payments, counted from your first payment. After the minimum term your plan continues month to month.</p>
+    <p data-es-html="Para cancelar después del período mínimo, envía un correo a <a href='mailto:info@deploymade.com'>info@deploymade.com</a> antes de tu próxima fecha de facturación. Tu suscripción termina al final del mes que ya pagaste. No reembolsamos meses parciales.">To cancel after the minimum term, email <a href="mailto:info@deploymade.com">info@deploymade.com</a> before your next billing date. Your subscription ends at the end of the month you have already paid for. We do not refund partial months.</p>
+    <p data-es="Si cancelas antes de completar el período mínimo, los pagos mensuales restantes de ese período se vuelven exigibles. Una vez pagados, tu suscripción termina como se describe arriba y la propiedad de la sección 9 aplica.">If you cancel before completing the minimum term, the remaining monthly payments in that term become due. Once they are paid, your subscription ends as described above and the ownership in section 9 applies.</p>
+    <p data-es="Deploy puede terminar tu suscripción en cualquier momento con 30 días de aviso, o inmediatamente si los pagos fallan y no se resuelven, o si el sitio se usa para algo ilegal. Si nosotros la terminamos, no se te cobrará por ningún período después de la fecha de finalización.">Deploy may end your subscription at any time with 30 days notice, or immediately if payments fail and are not resolved, or if the site is used for anything unlawful. If we end it, you will not be charged for any period after the end date.</p>
 
-    <h2>6. Billing</h2>
-    <p>Subscriptions and add ons are billed monthly in advance by card through Stripe. By checking out you authorize recurring charges to the card on file until your subscription ends.</p>
-    <p>If a payment fails we will retry it and email you. If the payment is not resolved within 14 days we may take the site offline until the balance is paid. Taking a site offline for non payment does not pause or extend your minimum term.</p>
+    <h2 data-es="6. Facturación">6. Billing</h2>
+    <p data-es="Las suscripciones y complementos se facturan mensualmente por adelantado con tarjeta a través de Stripe. Al completar tu compra, autorizas cargos recurrentes a la tarjeta registrada hasta que tu suscripción termine.">Subscriptions and add ons are billed monthly in advance by card through Stripe. By checking out you authorize recurring charges to the card on file until your subscription ends.</p>
+    <p data-es="Si un pago falla, lo reintentaremos y te enviaremos un correo. Si el pago no se resuelve dentro de 14 días, podemos desactivar el sitio hasta que se pague el saldo. Desactivar un sitio por falta de pago no pausa ni extiende tu período mínimo.">If a payment fails we will retry it and email you. If the payment is not resolved within 14 days we may take the site offline until the balance is paid. Taking a site offline for non payment does not pause or extend your minimum term.</p>
 
-    <h2>7. See it before you pay, revisions and changes</h2>
-    <p><strong>See it before you pay.</strong> Our team builds a mockup of your site before you pay anything and walks you through it on a call. The mockup is a preview of the design, not your finished site. If you decide not to move forward, you owe nothing and the mockup stays with Deploy. If you move forward, we build your full site from it with your information.</p>
-    <p><strong>Revisions.</strong> Once your full site is built with your information, you get 2 rounds of revisions before it goes live. After the second round the site is considered approved and goes live.</p>
-    <p><strong>Changes after launch.</strong> Get Found does not include monthly changes; anything after launch is quoted first and billed by the hour. Get Booked includes up to 2 hours of changes every month, such as new photos, a new service, a price change or a seasonal banner. On either plan, bigger changes, new pages beyond your plan limit and redesigns are quoted before any work begins.</p>
+    <h2 data-es="7. Vélo antes de pagar, revisiones y cambios">7. See it before you pay, revisions and changes</h2>
+    <p data-es-html="<strong>Vélo antes de pagar.</strong> Nuestro equipo construye una vista previa de tu sitio antes de que pagues y te la muestra en una llamada. La vista previa es un adelanto del diseño, no tu sitio terminado. Si decides no continuar, no debes nada y la vista previa queda con Deploy. Si continúas, construimos tu sitio completo a partir de ella con tu información."><strong>See it before you pay.</strong> Our team builds a mockup of your site before you pay anything and walks you through it on a call. The mockup is a preview of the design, not your finished site. If you decide not to move forward, you owe nothing and the mockup stays with Deploy. If you move forward, we build your full site from it with your information.</p>
+    <p data-es-html="<strong>Revisiones.</strong> Una vez que tu sitio completo está construido con tu información, tienes 2 rondas de revisiones antes de que se publique. Después de la segunda ronda, el sitio se considera aprobado y se publica."><strong>Revisions.</strong> Once your full site is built with your information, you get 2 rounds of revisions before it goes live. After the second round the site is considered approved and goes live.</p>
+    <p data-es-html="<strong>Cambios después del lanzamiento.</strong> Get Found no incluye cambios mensuales; cualquier cosa después del lanzamiento se cotiza primero y se factura por hora. Get Booked incluye hasta 2 horas de cambios cada mes, como nuevas fotos, un nuevo servicio, un cambio de precio o un banner de temporada. En cualquier plan, cambios más grandes, páginas nuevas más allá del límite de tu plan y rediseños se cotizan antes de comenzar cualquier trabajo."><strong>Changes after launch.</strong> Get Found does not include monthly changes; anything after launch is quoted first and billed by the hour. Get Booked includes up to 2 hours of changes every month, such as new photos, a new service, a price change or a seasonal banner. On either plan, bigger changes, new pages beyond your plan limit and redesigns are quoted before any work begins.</p>
 
-    <h2>8. Your domain</h2>
-    <p>Your domain name is always yours.</p>
-    <ul>
+    <h2 data-es="8. Tu dominio">8. Your domain</h2>
+    <p data-es="Tu nombre de dominio siempre es tuyo.">Your domain name is always yours.</p>
+    <ul data-es-html="<li>Si ya tienes uno, se queda en tu propia cuenta y simplemente lo apuntas hacia nosotros. Renovarlo con tu registrador es tu responsabilidad.</li><li>Si no tienes uno, podemos comprarlo por ti. El costo es $60 por año. Se registra a tu nombre, tú eres el propietario, se renueva cada año mientras tu suscripción esté activa, y te lo transferimos o te damos el acceso cuando lo solicites.</li>">
       <li>If you already have one, it stays in your own account and you simply point it to us. Renewing it with your registrar is your responsibility.</li>
       <li>If you don't have one, we can buy it for you. The cost is $60 per year. It is registered in your name, you are the owner, it renews every year while your subscription is active, and we will transfer it to you or hand over the login on request at any time.</li>
     </ul>
 
-    <h2>9. What you own</h2>
-    <p><strong>Your content.</strong> Everything you give us or that is specific to your business, including your logo, photos, written copy, reviews, pricing and contact details, is yours from day one. You can request a copy at any time and we will send it within 7 days.</p>
-    <p><strong>Your website.</strong> During your first 6 months, the website (its design, code, layout and files) is provided to you as part of your subscription. Once you have completed your 6 month minimum, the whole site is yours. You can request a complete copy of the site files at any time after that, delivered as a zip file you can host anywhere, whether you stay with Deploy or not.</p>
-    <p>Site files are delivered as standard website files. Third party services connected to your site, such as your booking tool, payment processor or email provider, are governed by those providers and are not part of the files.</p>
+    <h2 data-es="9. Lo que es tuyo">9. What you own</h2>
+    <p data-es-html="<strong>Tu contenido.</strong> Todo lo que nos das o que es específico de tu negocio, incluyendo tu logo, fotos, textos, reseñas, precios y datos de contacto, es tuyo desde el primer día. Puedes solicitar una copia en cualquier momento y la enviaremos dentro de 7 días."><strong>Your content.</strong> Everything you give us or that is specific to your business, including your logo, photos, written copy, reviews, pricing and contact details, is yours from day one. You can request a copy at any time and we will send it within 7 days.</p>
+    <p data-es-html="<strong>Tu sitio web.</strong> Durante tus primeros 6 meses, el sitio web (su diseño, código, estructura y archivos) se te proporciona como parte de tu suscripción. Una vez que completes tu mínimo de 6 meses, todo el sitio es tuyo. Puedes solicitar una copia completa de los archivos del sitio en cualquier momento después de eso, entregados como un archivo zip que puedes alojar en cualquier lugar, ya sea que te quedes con Deploy o no."><strong>Your website.</strong> During your first 6 months, the website (its design, code, layout and files) is provided to you as part of your subscription. Once you have completed your 6 month minimum, the whole site is yours. You can request a complete copy of the site files at any time after that, delivered as a zip file you can host anywhere, whether you stay with Deploy or not.</p>
+    <p data-es="Los archivos del sitio se entregan como archivos estándar de sitio web. Los servicios de terceros conectados a tu sitio, como tu herramienta de reservas, procesador de pagos o proveedor de correo, se rigen por esos proveedores y no son parte de los archivos.">Site files are delivered as standard website files. Third party services connected to your site, such as your booking tool, payment processor or email provider, are governed by those providers and are not part of the files.</p>
 
-    <h2>10. Email</h2>
-    <p><strong>Free forwarding email (Get Found).</strong> We set up info@ your domain. Everything sent to it is forwarded to the inbox you already use. It receives mail only; replies go out from your existing inbox.</p>
-    <p><strong>Professional Gmail inbox.</strong> A real inbox on your domain that sends and receives mail, set up on your phone. One is included on Get Booked and it is a $30 per month add on for Get Found. Extra users are $15 per month each.</p>
-    <p>Email is provided through Google. If your subscription ends, we will help you move your inbox to your own Google account, otherwise it is closed at the end of your last paid month. We recommend exporting any mail you want to keep before that date.</p>
+    <h2 data-es="10. Correo electrónico">10. Email</h2>
+    <p data-es-html="<strong>Correo de reenvío gratuito (Get Found).</strong> Configuramos info@ tu dominio. Todo lo que se envíe ahí se reenvía a la bandeja de entrada que ya usas. Solo recibe correo; las respuestas salen desde tu bandeja existente."><strong>Free forwarding email (Get Found).</strong> We set up info@ your domain. Everything sent to it is forwarded to the inbox you already use. It receives mail only; replies go out from your existing inbox.</p>
+    <p data-es-html="<strong>Bandeja de entrada profesional de Gmail.</strong> Una bandeja real en tu dominio que envía y recibe correo, configurada en tu teléfono. Una está incluida en Get Booked y es un complemento de $30 por mes para Get Found. Usuarios adicionales cuestan $15 por mes cada uno."><strong>Professional Gmail inbox.</strong> A real inbox on your domain that sends and receives mail, set up on your phone. One is included on Get Booked and it is a $30 per month add on for Get Found. Extra users are $15 per month each.</p>
+    <p data-es="El correo electrónico se proporciona a través de Google. Si tu suscripción termina, te ayudaremos a mover tu bandeja a tu propia cuenta de Google, de lo contrario se cierra al final de tu último mes pagado. Recomendamos exportar cualquier correo que quieras conservar antes de esa fecha.">Email is provided through Google. If your subscription ends, we will help you move your inbox to your own Google account, otherwise it is closed at the end of your last paid month. We recommend exporting any mail you want to keep before that date.</p>
 
-    <h2>11. Booking, payments and other third party tools</h2>
-    <p>On Get Booked we connect your booking calendar (for example Calendly or Square Appointments) and your payment link (for example Stripe or Square) to your site. The subscription to your booking software and any payment processing fees are paid by you directly to those providers and are governed by their own terms. Deploy connects them to your site but does not cover their fees.</p>
+    <h2 data-es="11. Reservas, pagos y otras herramientas de terceros">11. Booking, payments and other third party tools</h2>
+    <p data-es="En Get Booked conectamos tu calendario de reservas (por ejemplo Calendly o Square Appointments) y tu enlace de pago (por ejemplo Stripe o Square) a tu sitio. La suscripción a tu software de reservas y cualquier tarifa de procesamiento de pagos las pagas tú directamente a esos proveedores y se rigen por sus propios términos. Deploy los conecta a tu sitio pero no cubre sus tarifas.">On Get Booked we connect your booking calendar (for example Calendly or Square Appointments) and your payment link (for example Stripe or Square) to your site. The subscription to your booking software and any payment processing fees are paid by you directly to those providers and are governed by their own terms. Deploy connects them to your site but does not cover their fees.</p>
 
-    <h2>12. What happens when you leave</h2>
-    <p>When your subscription ends:</p>
-    <ul>
+    <h2 data-es="12. Qué pasa cuando te vas">12. What happens when you leave</h2>
+    <p data-es="Cuando tu suscripción termina:">When your subscription ends:</p>
+    <ul data-es-html="<li>La facturación se detiene al final de tu último mes pagado.</li><li>Tu sitio se retira del alojamiento de Deploy al final de ese mes. Si completaste tu mínimo de 6 meses, te enviamos los archivos de tu sitio primero para que puedas alojarlos en otro lugar.</li><li>Si compramos tu dominio, te lo transferimos o te damos el acceso.</li><li>Te enviamos una copia de tu contenido.</li><li>Tu correo de reenvío se detiene, y cualquier bandeja de Gmail se mueve a tu propia cuenta de Google o se cierra como se describe en la sección 10.</li><li>Mantenemos un respaldo de tu sitio por 30 días después de la cancelación en caso de que cambies de opinión, luego lo eliminamos.</li>">
       <li>Billing stops at the end of your last paid month.</li>
       <li>Your site comes down from Deploy hosting at the end of that month. If you have completed your 6 month minimum, we send you your site files first so you can host them elsewhere.</li>
       <li>If we bought your domain, we transfer it to you or hand over the login.</li>
@@ -241,25 +250,27 @@
       <li>We keep a backup of your site for 30 days after cancellation in case you change your mind, then delete it.</li>
     </ul>
 
-    <h2>13. Your responsibilities</h2>
-    <p>You confirm that you own or have permission to use everything you give us to put on the site, including photos, logos and text. You are responsible for the accuracy of the information on your site and for your own business compliance, such as licensing and pricing claims. Deploy is not responsible for how your customers interpret or act on your site.</p>
+    <h2 data-es="13. Tus responsabilidades">13. Your responsibilities</h2>
+    <p data-es="Confirmas que eres dueño o tienes permiso para usar todo lo que nos das para poner en el sitio, incluyendo fotos, logos y texto. Eres responsable de la exactitud de la información en tu sitio y del cumplimiento de tu propio negocio, como licencias y afirmaciones de precios. Deploy no es responsable de cómo tus clientes interpretan o actúan según tu sitio.">You confirm that you own or have permission to use everything you give us to put on the site, including photos, logos and text. You are responsible for the accuracy of the information on your site and for your own business compliance, such as licensing and pricing claims. Deploy is not responsible for how your customers interpret or act on your site.</p>
 
-    <h2>14. Limits</h2>
-    <p>We work hard to keep sites online and running, but we cannot promise uninterrupted service or specific business results such as a number of leads, calls or bookings. To the fullest extent allowed by law, Deploy's total liability to you for any claim related to these terms or the service is limited to the amount you paid Deploy in the 3 months before the claim.</p>
+    <h2 data-es="14. Límites">14. Limits</h2>
+    <p data-es="Trabajamos arduamente para mantener los sitios en línea y funcionando, pero no podemos prometer un servicio ininterrumpido ni resultados comerciales específicos como un número de leads, llamadas o reservas. En la máxima medida permitida por la ley, la responsabilidad total de Deploy hacia ti por cualquier reclamo relacionado con estos términos o el servicio se limita a la cantidad que pagaste a Deploy en los 3 meses anteriores al reclamo.">We work hard to keep sites online and running, but we cannot promise uninterrupted service or specific business results such as a number of leads, calls or bookings. To the fullest extent allowed by law, Deploy's total liability to you for any claim related to these terms or the service is limited to the amount you paid Deploy in the 3 months before the claim.</p>
 
-    <h2>15. Changes to these terms</h2>
-    <p>We may update these terms from time to time. If we make a material change we will email you at least 30 days before it takes effect. Continuing to use the service after that date means you accept the updated terms. Changes will not take away ownership you have already earned under sections 8 and 9.</p>
+    <h2 data-es="15. Cambios a estos términos">15. Changes to these terms</h2>
+    <p data-es="Podemos actualizar estos términos de vez en cuando. Si hacemos un cambio importante, te enviaremos un correo al menos 30 días antes de que entre en vigor. Continuar usando el servicio después de esa fecha significa que aceptas los términos actualizados. Los cambios no eliminarán la propiedad que ya hayas ganado bajo las secciones 8 y 9.">We may update these terms from time to time. If we make a material change we will email you at least 30 days before it takes effect. Continuing to use the service after that date means you accept the updated terms. Changes will not take away ownership you have already earned under sections 8 and 9.</p>
 
-    <h2>16. Governing law</h2>
-    <p>These terms are governed by the laws of the State of New York. Any dispute will be handled in the courts located in Suffolk County, New York.</p>
+    <h2 data-es="16. Ley aplicable">16. Governing law</h2>
+    <p data-es="Estos términos se rigen por las leyes del Estado de Nueva York. Cualquier disputa se manejará en los tribunales ubicados en el Condado de Suffolk, Nueva York.">These terms are governed by the laws of the State of New York. Any dispute will be handled in the courts located in Suffolk County, New York.</p>
 
-    <h2>17. Contact</h2>
-    <p>Questions about these terms or your subscription: <a href="mailto:info@deploymade.com">info@deploymade.com</a>.</p>
+    <h2 data-es="17. Contacto">17. Contact</h2>
+    <p data-es-html="Preguntas sobre estos términos o tu suscripción: <a href='mailto:info@deploymade.com'>info@deploymade.com</a>.">Questions about these terms or your subscription: <a href="mailto:info@deploymade.com">info@deploymade.com</a>.</p>
   </div>
 
   <div class="legal-footer">
-    <p>&copy; 2026 Deploy. All rights reserved.</p>
-    <p><a href="/terms">Terms of Service</a><a href="/privacy">Privacy Policy</a><a href="/">Home</a></p>
+    <p data-es="&copy; 2026 Deploy. Todos los derechos reservados.">&copy; 2026 Deploy. All rights reserved.</p>
+    <p><a href="/terms" data-es="Términos de Servicio">Terms of Service</a><a href="/privacy" data-es="Política de Privacidad">Privacy Policy</a><a href="/" data-es="Inicio">Home</a></p>
   </div>
+
+  <script src="js/lang.js"></script>
 </body>
 </html>
