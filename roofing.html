@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deploy | Websites for Roofers — Get Your Free Mockup</title>
+  <meta name="description" content="We design your roofing homepage free. See it before you pay. Live in 7 days. Starting at $99/month.">
+  <link rel="canonical" href="https://deploymade.com/roofing">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deploymade.com/roofing">
+  <meta property="og:title" content="Roofers: Get a Website That Wins You More Jobs">
+  <meta property="og:description" content="We design your roofing homepage free. See it before you pay. Live in 7 days.">
+  <meta property="og:image" content="https://deploymade.com/og-image.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Roofers: Get a Website That Wins You More Jobs">
+  <meta name="twitter:description" content="We design your roofing homepage free. See it before you pay. Live in 7 days.">
+
+  <meta name="theme-color" content="#FCF6F5">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <style>
+    @font-face {
+      font-family: 'Geist';
+      src: url('fonts/Geist-Regular.woff2') format('woff2');
+      font-weight: 400; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Geist';
+      src: url('fonts/Geist-Medium.woff2') format('woff2');
+      font-weight: 500; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Geist';
+      src: url('fonts/Geist-SemiBold.woff2') format('woff2');
+      font-weight: 600; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Geist';
+      src: url('fonts/Geist-Bold.woff2') format('woff2');
+      font-weight: 700; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Geist Mono';
+      src: url('fonts/GeistMono-Regular.woff2') format('woff2');
+      font-weight: 400; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Geist Mono';
+      src: url('fonts/GeistMono-Medium.woff2') format('woff2');
+      font-weight: 500; font-style: normal; font-display: swap;
+    }
+
+    :root {
+      --cream:       #FCF6F5;
+      --cream-50:    #FFFBFA;
+      --cream-200:   #F3EAE8;
+      --line:        #E5D9D6;
+      --ink:         #000000;
+      --ink-muted:   #5F5856;
+      --swift-blue:  #133BC7;
+      --swift-light: #9AACFF;
+      --font-sans:   'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-mono:   'Geist Mono', 'SF Mono', 'Fira Code', monospace;
+      --max-w:       1200px;
+      --gutter:      20px;
+    }
+    @media (min-width: 768px) { :root { --gutter: 40px; } }
+    @media (min-width: 1024px) { :root { --gutter: 64px; } }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body {
+      font-family: var(--font-sans);
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--cream);
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+
+    .label {
+      font-family: var(--font-mono);
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+    }
+
+    /* ───── CTA button ───── */
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 16px 32px;
+      background: var(--ink);
+      color: var(--cream);
+      font-weight: 600;
+      font-size: 16px;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+    .cta::after {
+      content: '\2192';
+    }
+
+    /* ───── Top bar ───── */
+    .topbar {
+      padding: 16px 0;
+      text-align: center;
+    }
+    .topbar-logo {
+      height: 24px;
+      display: inline-block;
+    }
+
+    /* ───── Hero ───── */
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero .container {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border: 1px solid var(--line);
+      border-radius: 100px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 32px;
+      background: var(--cream-50);
+    }
+    .hero h1 {
+      font-weight: 700;
+      font-size: clamp(36px, 7.5vw, 64px);
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      max-width: 800px;
+      margin: 0 auto 24px;
+    }
+    .hero h1 .highlight {
+      display: inline;
+      background: linear-gradient(135deg, var(--swift-blue), var(--swift-light));
+      color: #fff;
+      padding: 2px 16px;
+      border-radius: 12px;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+    .hero .subhead {
+      font-size: 18px;
+      color: var(--ink-muted);
+      max-width: 520px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .cta-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 16px 32px;
+      background: transparent;
+      color: var(--ink);
+      font-weight: 600;
+      font-size: 16px;
+      border-radius: 100px;
+      border: 1px solid var(--line);
+      cursor: pointer;
+      transition: transform 0.2s, border-color 0.2s, background 0.2s;
+      text-decoration: none;
+    }
+    .cta-outline:hover {
+      border-color: var(--ink);
+      background: var(--cream-200);
+      transform: translateY(-2px);
+    }
+    .hero .guarantee-line {
+      margin-top: 20px;
+      font-size: 14px;
+      color: var(--ink-muted);
+    }
+
+    /* Floating mockup cards */
+    .hero-cards {
+      position: relative;
+      max-width: 900px;
+      margin: 56px auto 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .hero-card {
+      width: 260px;
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+      transition: transform 0.4s var(--ease-out, ease);
+      flex-shrink: 0;
+    }
+    .hero-card:nth-child(1) { transform: rotate(-2deg) translateY(8px); }
+    .hero-card:nth-child(2) { transform: scale(1.04); z-index: 1; box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
+    .hero-card:nth-child(3) { transform: rotate(2deg) translateY(8px); }
+    .hero-card:hover { transform: translateY(-4px) rotate(0deg) scale(1.02); }
+    .hero-card img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-card-label {
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .hero-card-label span {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--ink-muted);
+      font-family: var(--font-mono);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    @media (max-width: 767px) {
+      .hero-cards { gap: 12px; overflow-x: auto; justify-content: flex-start; padding: 0 var(--gutter); -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory; }
+      .hero-card { min-width: 220px; width: 220px; scroll-snap-align: center; }
+      .hero-card:nth-child(1),
+      .hero-card:nth-child(2),
+      .hero-card:nth-child(3) { transform: none; box-shadow: 0 8px 32px rgba(0,0,0,0.06); }
+    }
+
+    /* ───── Problem ───── */
+    .problem {
+      padding: 64px 0;
+      border-top: 1px solid var(--line);
+    }
+    .problem p {
+      font-size: 20px;
+      line-height: 1.6;
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* ───── Steps ───── */
+    .steps {
+      padding: 80px 0;
+    }
+    .steps-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .steps-header h2 {
+      font-weight: 600;
+      font-size: clamp(24px, 4vw, 36px);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-top: 12px;
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    @media (min-width: 768px) {
+      .steps-grid { grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    }
+    .step {
+      text-align: center;
+    }
+    .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--ink);
+      color: var(--cream);
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .step h3 {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    .step p {
+      color: var(--ink-muted);
+      font-size: 15px;
+    }
+
+    /* ───── Proof / Portfolio ───── */
+    .proof {
+      padding: 80px 0;
+      border-top: 1px solid var(--line);
+    }
+    .proof-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .proof-header h2 {
+      font-weight: 600;
+      font-size: clamp(24px, 4vw, 36px);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-top: 12px;
+    }
+    .proof-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    @media (min-width: 768px) {
+      .proof-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .proof-card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .proof-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    }
+    .proof-card-img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      background: var(--cream-200);
+      position: relative;
+      overflow: hidden;
+    }
+    .proof-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .proof-card-img .badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--ink);
+      color: var(--cream);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+    .proof-card-body {
+      padding: 20px;
+    }
+    .proof-card-body h3 {
+      font-weight: 600;
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+    .proof-card-body p {
+      color: var(--ink-muted);
+      font-size: 14px;
+    }
+
+    /* ───── Included ───── */
+    .included {
+      padding: 80px 0;
+      border-top: 1px solid var(--line);
+    }
+    .included-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .included-header h2 {
+      font-weight: 600;
+      font-size: clamp(24px, 4vw, 36px);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-top: 12px;
+    }
+    .included-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    @media (min-width: 600px) {
+      .included-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .included-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .included-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--ink);
+      color: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+    .included-item h3 {
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 2px;
+    }
+    .included-item p {
+      color: var(--ink-muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* ───── Guarantee ───── */
+    .guarantee-section {
+      padding: 64px 0;
+      text-align: center;
+    }
+    .guarantee-box {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 48px 32px;
+      background: var(--ink);
+      color: var(--cream);
+      border-radius: 20px;
+    }
+    .guarantee-box h2 {
+      font-weight: 700;
+      font-size: clamp(22px, 4vw, 32px);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+    .guarantee-box p {
+      font-size: 16px;
+      opacity: 0.8;
+      margin-bottom: 8px;
+    }
+    .guarantee-box .price {
+      font-weight: 700;
+      font-size: 20px;
+      opacity: 1;
+      margin-top: 16px;
+    }
+
+    /* ───── Spots ───── */
+    .spots {
+      padding: 48px 0;
+      text-align: center;
+    }
+    .spots-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--cream-200);
+      border: 1px solid var(--line);
+      padding: 10px 20px;
+      border-radius: 100px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .spots-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #E53E3E;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    /* ───── FAQ ───── */
+    .faq {
+      padding: 80px 0;
+      border-top: 1px solid var(--line);
+    }
+    .faq-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .faq-header h2 {
+      font-weight: 600;
+      font-size: clamp(24px, 4vw, 36px);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-top: 12px;
+    }
+    .faq-list {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--line);
+    }
+    .faq-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 20px 0;
+      text-align: left;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: var(--font-sans);
+      color: var(--ink);
+    }
+    .faq-q::after {
+      content: '+';
+      font-size: 22px;
+      font-weight: 400;
+      flex-shrink: 0;
+      margin-left: 16px;
+      transition: transform 0.3s;
+    }
+    .faq-item.open .faq-q::after {
+      transform: rotate(45deg);
+    }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+    .faq-item.open .faq-a {
+      max-height: 200px;
+      padding-bottom: 20px;
+    }
+    .faq-a p {
+      color: var(--ink-muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* ───── Lead form ───── */
+    .form-section {
+      padding: 80px 0;
+      border-top: 1px solid var(--line);
+    }
+    .form-section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .form-section-header h2 {
+      font-weight: 600;
+      font-size: clamp(24px, 4vw, 36px);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-top: 12px;
+    }
+    .form-section-header p {
+      color: var(--ink-muted);
+      margin-top: 8px;
+    }
+    .lead-form {
+      max-width: 480px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .lead-form input {
+      width: 100%;
+      padding: 14px 18px;
+      font-family: var(--font-sans);
+      font-size: 15px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .lead-form input::placeholder {
+      color: #A89E9B;
+    }
+    .lead-form input:focus {
+      border-color: var(--swift-blue);
+    }
+    .lead-form .cta {
+      width: 100%;
+      justify-content: center;
+      padding: 18px 32px;
+      font-size: 17px;
+      margin-top: 4px;
+    }
+    .form-note {
+      text-align: center;
+      font-size: 13px;
+      color: var(--ink-muted);
+      margin-top: 8px;
+    }
+
+    /* ───── Footer ───── */
+    .lp-footer {
+      padding: 32px 0;
+      text-align: center;
+      border-top: 1px solid var(--line);
+    }
+    .lp-footer p {
+      font-size: 13px;
+      color: var(--ink-muted);
+    }
+
+    /* ───── Fade-in animation ───── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top bar — logo only, no nav -->
+  <div class="topbar">
+    <div class="container">
+      <img src="assets/deploy-logo.svg" alt="Deploy" class="topbar-logo">
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-pill">Designed for roofing companies</div>
+      <h1>Your website loses jobs.<br><span class="highlight">We fix that in 7 days.</span></h1>
+      <p class="subhead">We design your new homepage free. See it before you pay a cent. If you don't love it, walk away.</p>
+      <div class="hero-buttons">
+        <a href="#form" class="cta">Get My Free Mockup</a>
+        <a href="#proof" class="cta-outline">See Our Work</a>
+      </div>
+      <p class="guarantee-line">No payment required. No contracts. See your design first.</p>
+
+      <div class="hero-cards">
+        <div class="hero-card">
+          <img src="assets/lp/karlosmateo-preview.jpg" alt="Karlos Mateo Corp website" loading="lazy">
+          <div class="hero-card-label">Karlos Mateo Corp <span>Carpentry</span></div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/lp/bestjob-preview.jpg" alt="Best Job Construction website" loading="lazy">
+          <div class="hero-card-label">Best Job Construction <span>Roofing</span></div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/lp/mariascleaning-preview.jpg" alt="Maria's Cleaning Co website" loading="lazy">
+          <div class="hero-card-label">Maria's Cleaning Co <span>Cleaning</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem fade-in">
+    <div class="container">
+      <p>Homeowners Google 3 roofers, check their websites, and call one. If yours looks outdated&mdash;or you don't have one at all&mdash;that job goes to your competitor.</p>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="steps">
+    <div class="container">
+      <div class="steps-header fade-in">
+        <p class="label">How it works</p>
+        <h2>Three steps. Seven days.</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step fade-in">
+          <div class="step-num">1</div>
+          <h3>Tell us about your business</h3>
+          <p>Fill out the form below. It takes 2 minutes. We'll learn what you do, where you work, and what sets you apart.</p>
+        </div>
+        <div class="step fade-in">
+          <div class="step-num">2</div>
+          <h3>See your new homepage</h3>
+          <p>We design your homepage free. You'll see a real mockup of your site&mdash;not a template. No payment needed.</p>
+        </div>
+        <div class="step fade-in">
+          <div class="step-num">3</div>
+          <h3>Go live in 7 days</h3>
+          <p>Like it? We build, write the copy, set up SEO, and launch. You just approve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section class="proof" id="proof">
+    <div class="container">
+      <div class="proof-header fade-in">
+        <p class="label">Real results</p>
+        <h2>Sites we've built from scratch.</h2>
+      </div>
+      <div class="proof-grid">
+        <div class="proof-card fade-in">
+          <div class="proof-card-img">
+            <img src="assets/lp/bestjob-preview.jpg" alt="Best Job Construction website" loading="lazy">
+            <span class="badge">Roofing &amp; Siding</span>
+          </div>
+          <div class="proof-card-body">
+            <h3>Best Job Construction</h3>
+            <p>West Hempstead, NY &mdash; went from no website to a full online presence with booking and reviews.</p>
+          </div>
+        </div>
+        <div class="proof-card fade-in">
+          <div class="proof-card-img">
+            <img src="assets/lp/karlosmateo-preview.jpg" alt="Karlos Mateo Corp website" loading="lazy">
+            <span class="badge">Framing &amp; Carpentry</span>
+          </div>
+          <div class="proof-card-body">
+            <h3>Karlos Mateo Corp</h3>
+            <p>Long Island, NY &mdash; a framing contractor who now looks like the most established name in town.</p>
+          </div>
+        </div>
+        <div class="proof-card fade-in">
+          <div class="proof-card-img">
+            <img src="assets/lp/mariascleaning-preview.jpg" alt="Maria's Cleaning Co website" loading="lazy">
+            <span class="badge">Cleaning Services</span>
+          </div>
+          <div class="proof-card-body">
+            <h3>Maria's Cleaning Co</h3>
+            <p>Long Island, NY &mdash; 25 years in business, now with a site that matches that reputation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S INCLUDED -->
+  <section class="included">
+    <div class="container">
+      <div class="included-header fade-in">
+        <p class="label">What you get</p>
+        <h2>Everything a roofing company needs online.</h2>
+      </div>
+      <div class="included-grid fade-in">
+        <div class="included-item">
+          <div class="included-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <h3>"Book Free Inspection" on every page</h3>
+            <p>Homeowners can call or book right from your site. No searching for your number.</p>
+          </div>
+        </div>
+        <div class="included-item">
+          <div class="included-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div>
+            <h3>Your reviews front and center</h3>
+            <p>We showcase your best reviews so visitors trust you before they even call.</p>
+          </div>
+        </div>
+        <div class="included-item">
+          <div class="included-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <div>
+            <h3>Fast on every phone</h3>
+            <p>Most of your visitors are on mobile. Your site will load fast and look sharp on any screen.</p>
+          </div>
+        </div>
+        <div class="included-item">
+          <div class="included-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div>
+            <h3>Set up to show on Google</h3>
+            <p>Proper SEO so when someone searches "roofer near me," you have a chance to show up.</p>
+          </div>
+        </div>
+        <div class="included-item">
+          <div class="included-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div>
+            <h3>Live in 7 days</h3>
+            <p>Not 7 weeks. We write, build, test, and launch fast so you start getting leads sooner.</p>
+          </div>
+        </div>
+        <div class="included-item">
+          <div class="included-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h3>Maintained every month</h3>
+            <p>We handle updates, hosting, and fixes. You run your business, we run your site.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUARANTEE + PRICING -->
+  <section class="guarantee-section fade-in">
+    <div class="container">
+      <div class="guarantee-box">
+        <h2>See it before you pay.</h2>
+        <p>We design your homepage first, free. If you don't love it, you don't pay. Zero risk.</p>
+        <p class="price">Starting at $99/mo</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIMITED SPOTS -->
+  <section class="spots fade-in">
+    <div class="container">
+      <div class="spots-pill">
+        <span class="spots-dot"></span>
+        We take 4 new roofing clients per month
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="faq-header fade-in">
+        <p class="label">Questions</p>
+        <h2>Before you fill in the form.</h2>
+      </div>
+      <div class="faq-list fade-in">
+        <div class="faq-item">
+          <button class="faq-q">What's the catch with "free"?</button>
+          <div class="faq-a">
+            <p>There's no catch. We design your homepage on us because we're confident you'll want it. If you don't, we part ways. No invoice, no awkward follow-ups.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What does it cost after the free mockup?</button>
+          <div class="faq-a">
+            <p>Plans start at $99/month. That includes your website, hosting, maintenance, and ongoing support. No surprise fees.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What do I need to send you?</button>
+          <div class="faq-a">
+            <p>Just your business name, the area you serve, and your current website if you have one. We handle the rest&mdash;copy, design, photos, everything.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How long until my site is live?</button>
+          <div class="faq-a">
+            <p>7 days from approval. We show you the mockup first, you approve it, then we build, write copy, set up SEO, and launch within a week.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD FORM -->
+  <section class="form-section" id="form">
+    <div class="container">
+      <div class="form-section-header fade-in">
+        <p class="label">Get started</p>
+        <h2>Get your free mockup.</h2>
+        <p>Fill this out and we'll design your homepage&mdash;on us.</p>
+      </div>
+      <form class="lead-form fade-in" id="leadForm" action="#" method="POST">
+        <input type="text" name="name" placeholder="Your name" required autocomplete="name">
+        <input type="text" name="business" placeholder="Business name" required>
+        <input type="url" name="website" placeholder="Current website (if any)" autocomplete="url">
+        <input type="tel" name="phone" placeholder="Phone number" required autocomplete="tel">
+        <input type="email" name="email" placeholder="Email" required autocomplete="email">
+        <button type="submit" class="cta">Get My Free Mockup</button>
+      </form>
+      <p class="form-note">We'll reply within 24 hours with your custom mockup.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="lp-footer">
+    <div class="container">
+      <p>&copy; 2026 Deploy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = btn.parentElement;
+        var wasOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(function(el) {
+          el.classList.remove('open');
+        });
+        if (!wasOpen) item.classList.add('open');
+      });
+    });
+
+    // Fade-in on scroll
+    var fadeEls = document.querySelectorAll('.fade-in');
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    fadeEls.forEach(function(el) { observer.observe(el); });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
