@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="intro-active">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -670,9 +670,52 @@
       opacity: 1;
       transform: translateY(0);
     }
+    /* ───── Intro Animation ───── */
+    .intro-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+    .intro-overlay.done {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .intro-logo {
+      height: 120px;
+      width: 120px;
+      object-fit: contain;
+      will-change: transform;
+      transition: transform 0.85s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+    html.intro-active .topbar-logo {
+      visibility: hidden;
+    }
+    html.intro-active .hero {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    .hero {
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .intro-overlay { display: none; }
+      html.intro-active .topbar-logo { visibility: visible; }
+      html.intro-active .hero { opacity: 1; transform: none; }
+    }
   </style>
 </head>
 <body>
+
+  <!-- Intro animation overlay -->
+  <div class="intro-overlay" id="introOverlay">
+    <img src="apple-touch-icon.png" alt="" class="intro-logo" id="introLogo">
+  </div>
 
   <!-- Top bar — logo only, no nav -->
   <div class="topbar">
@@ -971,6 +1014,39 @@
         }
       });
     });
+  </script>
+
+  <script>
+    (function() {
+      var overlay = document.getElementById('introOverlay');
+      var logo = document.getElementById('introLogo');
+      var target = document.querySelector('.topbar-logo');
+      if (!overlay || !logo || !target) return;
+
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        overlay.remove();
+        document.documentElement.classList.remove('intro-active');
+        return;
+      }
+
+      setTimeout(function() {
+        var logoRect = logo.getBoundingClientRect();
+        var targetRect = target.getBoundingClientRect();
+        var birdCx = targetRect.left + targetRect.width * 0.94;
+        var birdCy = targetRect.top + targetRect.height * 0.25;
+        var birdH = targetRect.height * 0.55;
+        var dx = birdCx - (logoRect.left + logoRect.width / 2);
+        var dy = birdCy - (logoRect.top + logoRect.height / 2);
+        var scale = birdH / logoRect.height;
+        logo.style.transform = 'translate(' + dx + 'px, ' + dy + 'px) scale(' + scale + ')';
+
+        setTimeout(function() {
+          overlay.classList.add('done');
+          document.documentElement.classList.remove('intro-active');
+          setTimeout(function() { overlay.remove(); }, 600);
+        }, 650);
+      }, 400);
+    })();
   </script>
 
 </body>
