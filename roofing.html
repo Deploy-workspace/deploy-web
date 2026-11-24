@@ -981,7 +981,7 @@
       <form class="lead-form fade-in" id="leadForm" action="#" method="POST">
         <input type="text" name="name" placeholder="Your name" required autocomplete="name">
         <input type="text" name="business" placeholder="Business name" required>
-        <input type="url" name="website" placeholder="Current website (if any)" autocomplete="url">
+        <input type="text" name="website" placeholder="Current website (if any)" autocomplete="url">
         <input type="tel" name="phone" placeholder="Phone number" required autocomplete="tel">
         <input type="email" name="email" placeholder="Email" required autocomplete="email">
         <button type="submit" class="cta">Get My Free Mockup</button>
@@ -1030,6 +1030,22 @@
           e.preventDefault();
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+      });
+    });
+
+    // Lead form submission
+    document.getElementById('leadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var form = e.target;
+      var data = new FormData(form);
+      fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function() {
+        window.location.href = '/thank-you';
+      }).catch(function() {
+        window.location.href = '/thank-you';
       });
     });
   </script>
