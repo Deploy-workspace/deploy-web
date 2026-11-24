@@ -33,6 +33,13 @@
   /></noscript>
   <!-- End Meta Pixel Code -->
 
+  <!-- Cal.com embed -->
+  <script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", {origin:"https://cal.com"});
+  Cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
+
   <style>
     @font-face { font-family: 'Geist'; src: url('fonts/Geist-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
     @font-face { font-family: 'Geist'; src: url('fonts/Geist-Medium.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
@@ -187,6 +194,20 @@
     }
     .back-link:hover { color: var(--ink); }
 
+    .book-call-btn {
+      display: inline-block;
+      background: var(--ink);
+      color: var(--cream);
+      padding: 14px 32px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      margin-bottom: 20px;
+      transition: opacity 0.2s;
+    }
+    .book-call-btn:hover { opacity: 0.85; }
+
     .lp-footer {
       padding: 32px 0;
       text-align: center;
@@ -246,6 +267,7 @@
         </div>
       </div>
 
+      <a href="#" onclick="event.preventDefault(); if(typeof Cal !== 'undefined') Cal('modal', {calLink: 'deploy-made-yum9t6/discovery-call'});" class="book-call-btn">Book Your Free Call Now</a>
       <a href="/roofing" class="back-link">&larr; Back to homepage</a>
     </div>
   </section>

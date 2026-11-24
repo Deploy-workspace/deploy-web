@@ -121,9 +121,12 @@
 
   <link rel="stylesheet" href="css/styles.css">
 
-  <!-- Calendly popup widget -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <!-- Cal.com embed -->
+  <script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", {origin:"https://cal.com"});
+  Cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
 </head>
 <body>
 
@@ -485,7 +488,7 @@
             </li>
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#133BC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <span data-es="Reservas en línea (Calendly)">Online booking (Calendly)</span>
+              <span data-es="Reservas en línea (Cal.com)">Online booking (Cal.com)</span>
             </li>
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#133BC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -511,7 +514,7 @@
             </li>
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#9AACFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <span data-es="Reservas en línea (Calendly)">Online booking (Calendly)</span>
+              <span data-es="Reservas en línea (Cal.com)">Online booking (Cal.com)</span>
             </li>
             <li>
               <svg class="check" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#9AACFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -660,9 +663,9 @@
   <script>
     document.addEventListener('click', function(e) {
       var link = e.target.closest('a[href="#book"]');
-      if (link && typeof Calendly !== 'undefined') {
+      if (link && typeof Cal !== 'undefined') {
         e.preventDefault();
-        Calendly.initPopupWidget({ url: 'https://calendly.com/deploymade-info/30min' });
+        Cal("modal", {calLink: "deploy-made-yum9t6/discovery-call"});
       }
     });
   </script>

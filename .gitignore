@@ -10,3 +10,4 @@
 *.p12
 *credentials*.json
 *serviceAccount*.json
+.env*

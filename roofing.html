@@ -42,6 +42,13 @@
   /></noscript>
   <!-- End Meta Pixel Code -->
 
+  <!-- Cal.com embed -->
+  <script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", {origin:"https://cal.com"});
+  Cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
+
   <style>
     @font-face {
       font-family: 'Geist';
@@ -987,6 +994,7 @@
         <button type="submit" class="cta">Get My Free Mockup</button>
       </form>
       <p class="form-note">We'll reply within 24 hours with your custom mockup.</p>
+      <p class="form-note" style="margin-top:12px;">Prefer to talk first? <a href="#" onclick="event.preventDefault(); if(typeof Cal !== 'undefined') Cal('modal', {calLink: 'deploy-made-yum9t6/discovery-call'});" style="color:var(--swift-blue);font-weight:500;text-decoration:underline;">Book a free call</a></p>
     </div>
   </section>
 
