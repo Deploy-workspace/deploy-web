@@ -128,10 +128,15 @@
   Cal("init", {origin:"https://cal.com"});
   Cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
   Cal("on", {action: "bookingSuccessful", callback: function(e) {
+    var leadId = 'lead_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    var schedId = 'sched_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
     if (typeof fbq !== 'undefined') {
-      fbq('track', 'Lead');
-      fbq('track', 'Schedule');
+      fbq('track', 'Lead', {}, {eventID: leadId});
+      fbq('track', 'Schedule', {}, {eventID: schedId});
     }
+    var url = window.location.href;
+    fetch('/api/meta-event', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({event_name:'Lead', event_id:leadId, event_source_url:url})}).catch(function(){});
+    fetch('/api/meta-event', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({event_name:'Schedule', event_id:schedId, event_source_url:url})}).catch(function(){});
   }});
   </script>
 </head>
